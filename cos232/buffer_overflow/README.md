@@ -9,7 +9,7 @@ overflow attacks, and to demonstrate them to the professor.
 
 ### Return-Oriented Programming Attack
 
-Vulnerability Location: shared/source/role.c
+*Vulnerability Location*: `shared/source/role.c`
 
 For my first attack, I exploited a return-oriented programming vulnerability.
 The code is vulnerable because a student can carefully craft specific input for
@@ -19,7 +19,7 @@ The exploit works like this: the stack location of the return address is
 located 56 bytes higher in memory than the username variable. Because of this,
 the user can simply provide 56 bytes of junk characters in username input,
 overflowing its 32-byte capacity. To see an example of such a username, see
-"malicious\_username.txt".
+`malicious\_username.txt`.
 
 After 56 bytes, the user can specify the address of the first instruction in
 `runTeacherProgram`, replacing the actual return address with a custom return
@@ -38,7 +38,7 @@ performance in my classes.
 
 ### Integer Overflow Attack
 
-Vulnerability Location: teacher/source/teacher.c
+*Vulnerability Location*: `teacher/source/teacher.c`
 
 For my second attack, I exploited an integer overflow vulnerability. The code
 is vulnerable because the user can carefully craft a specific menu option input
