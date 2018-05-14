@@ -1,1 +1,0 @@
-| p1 p2 |p1 := Polynomial new initialize: #(42 -3 0 5).p2 := Polynomial new initialize: #(42 -3 0 5).((p1 sum: p2) asArray) inspect.(p1 evaluate: 2) inspect.(p1 evaluate) inspect.((p1 differentiate) asArray) inspect.p1 graphFrom: -4 graphTo: 4.
