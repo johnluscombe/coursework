@@ -1,9 +1,0 @@
-<h1>New Service</h1><br>
-
-<%= render 'shared/errors', object: @service %>
-
-<%= form_for [@church, @service] do |form| %>
-<%= render partial: 'fields', locals: { f: form } %>
-
-<%= form.submit 'Create new service', class: 'btn btn-success' %>
-<% end %>
