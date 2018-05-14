@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Giftlet</string>
+    <string name="add_new_gift">Add New Gift</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="url">URL</string>
+    <string name="name">Name</string>
+    <string name="view_my_gifts">View My Gifts</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="show_gift_on">SHOW GIFT - ON</string>
+    <string name="show_gift_off">SHOW GIFT - OFF</string>
+    <string name="enable_price">Enable Price</string>
+    <string name="priority">Priority</string>
+    <string name="action_view_my_gifts">View My Gifts</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open Navigation Drawer</string>
+    <string name="drawer_close">Close Navigation Drawer</string>
+    <string name="settings">Settings</string>
+    <string name="random_setting">Random Setting</string>
+    <string name="no_data">This user has not added any gifts yet!</string>
+    <string name="save">Save</string>
+    <string name="user_name">user_name</string>
+
+    <string-array name="recipients" id="recipients">
+        <item>Bill Luscombe</item>
+        <item>Laurie Luscombe</item>
+        <item>Cathryn Gibbons</item>
+        <item>Oliver Gibbons</item>
+        <item>Casper Gibbons</item>
+        <item>Cameron Gibbons</item>
+    </string-array>
+
+    <string-array name="recipient_gifts">
+        <item>Book Stand</item>
+        <item>Codenames Board Game</item>
+        <item>Dominion Board Game</item>
+        <item>Starbucks Gift Card</item>
+        <item>Steam Gift Card</item>
+        <item>Subway Gift Card</item>
+        <item>Screwdriver Set</item>
+    </string-array>
+</resources>

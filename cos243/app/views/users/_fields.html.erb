@@ -1,0 +1,20 @@
+<table>
+  <col width="100">
+  <col width="200">
+  <tr>
+    <td class="text-right"><%= f.label :name, 'Username' %></td>
+    <td><%= f.text_field :name, class: 'form-control' %></td>
+  </tr>
+  <tr>
+    <td class="text-right"><%= f.label :email %></td>
+    <td><%= f.text_field :email, class: 'form-control' %></td>
+  </tr>
+  <tr>
+    <td class="text-right"><%= f.label :password %></td>
+    <td><%= f.password_field :password, class: 'form-control' %></td>
+  </tr>
+  <tr>
+    <td class="text-right"><%= f.label :password_confirmation, 'Confirmation' %></td>
+    <td><%= f.password_field :password_confirmation, class: 'form-control' %></td>
+  </tr>
+</table><br>

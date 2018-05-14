@@ -1,0 +1,14 @@
+<tr>
+  <li>
+    <td><%= link_to church.name, church, method: :get %></td>
+    <td><%= link_to 'official web site', church.web_site %></td>
+
+    <% if current_user?(church.user) %>
+        <td class="text-right"><%= link_to 'edit', edit_church_path(church), class: 'btn btn-default btn-xs' %></td>
+    <% else %>
+        <td></td>
+    <% end %>
+
+    <td class="text-right"><%= link_to 'delete', church, method: :delete, class: 'btn btn-danger btn-xs' %></td>
+  </li>
+</tr>

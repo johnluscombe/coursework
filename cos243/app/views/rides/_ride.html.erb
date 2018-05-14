@@ -1,0 +1,27 @@
+<div class="ride<%= ride.id %>">
+  <tr>
+    <% if ride.user == current_user %>
+        <td>(provider)</td>
+    <% elsif ride.users.include? current_user %>
+        <td>(rider)</td>
+    <% else %>
+        <td></td>
+    <% end %>
+    <td><li><%= link_to ride.service.church.name, ride.service.church %></li></td>
+    <td><li><%= link_to ride.user.name, ride.user %></li></td>
+    <td><li><%= ride.date %></li></td>
+    <td><li><%= ride.leave_time.strftime("%k:%M %p") %></li></td>
+    <td><li><%= ride.return_time.strftime("%k:%M %p") %></li></td>
+    <td><li><%= ride.seats_available %></li></td>
+    <td><li><%= ride.meeting_location %></li></td>
+    <td><li><%= ride.vehicle %></li></td>
+    <td class="text-right"><li><%= link_to "more info", ride_path(ride), class: 'btn btn-default btn-xs' %></li></td>
+
+    <% if current_user?(ride.user) %>
+      <td class="text-right"><%= link_to "edit", edit_ride_path(ride), class: 'btn btn-default btn-xs' %></td>
+      <td class="text-right"><li><%= link_to "delete", ride, method: :delete, class: 'btn btn-danger btn-xs' %></li></td>
+    <% else %>
+      <td></td>
+    <% end %>
+  </tr>
+</div>

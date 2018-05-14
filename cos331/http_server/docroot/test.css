@@ -1,0 +1,9 @@
+body {
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+#box {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}

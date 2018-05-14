@@ -1,0 +1,35 @@
+<h1>Profile Page for <%= @user.name %></h1>
+<p>Email: <%= @user.email %></p><br>
+
+<% if @user.church != nil %>
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong><%= current_user.name %>'s Church</strong></div>
+      <table class="table table">
+        <col width="499">
+        <col width="499">
+        <col width="1">
+        <col width="1">
+        <%= render @user.church %>
+      </table>
+    </div>
+<% end %>
+
+<% if @user.rides.count > 0 %>
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong><%= current_user.name %>'s Rides</strong></div>
+      <table class="table table">
+        <th></th>
+        <th>Church</th>
+        <th>From</th>
+        <th>Date</th>
+        <th>Leave Time</th>
+        <th>Return Time</th>
+        <th>Seats Left</th>
+        <th>Meeting Location</th>
+        <th>Vehicle</th>
+        <th></th>
+        <th></th>
+        <%= render @user.rides %>
+      </table>
+    </div>
+<% end %>

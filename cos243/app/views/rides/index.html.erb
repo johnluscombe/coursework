@@ -1,0 +1,27 @@
+<h1>List of rides</h1><br>
+
+<table class="table table-striped">
+  <th></th>
+  <th>Church</th>
+  <th>From</th>
+  <th>Date</th>
+  <th>Leave Time</th>
+  <th>Return Time</th>
+  <th>Seats Left</th>
+  <th>Meeting Location</th>
+  <th>Vehicle</th>
+  <th></th>
+  <th></th>
+  <% if @service.rides.count == 0 %>
+      <tr>
+        <td colspan="6">There are no rides for this service yet.</td>
+      </tr>
+  <% else %>
+      <%= render @rides %>
+      <tr>
+        <td class="total-row text-center" colspan="11"><strong><%= pluralize(@rides.count, 'ride') %></strong></td>
+      </tr>
+  <% end %>
+</table>
+
+<%= link_to 'Offer Ride', new_service_ride_path(@service), class: 'btn btn-success' %>

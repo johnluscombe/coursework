@@ -1,0 +1,10 @@
+(OP)
+| TITLE = Example Quiz
+| SCRAMBLE_CHOICES = True
+END
+
+What is the meaning of life?
+| Tim Parr
+> 42
+| Dr. Denning
+END

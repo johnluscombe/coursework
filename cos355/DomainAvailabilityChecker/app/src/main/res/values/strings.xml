@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DomainAvailabilityChecker</string>
+    <string name="domain_available">Domain is available! :)</string>
+    <string name="congrats">Congrats!</string>
+</resources>

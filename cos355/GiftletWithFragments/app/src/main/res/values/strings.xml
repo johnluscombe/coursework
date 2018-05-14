@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Giftlet</string>
+    <string name="no_recipients">There are no recipients yet!</string>
+    <string name="no_gifts">This recipient has not added any gifts yet!</string>
+    <string name="add_new_recipient">Add New Recipient</string>
+    <string name="add_new_gift">Add New Gift</string>
+    <string name="delete">delete</string>
+    <string name="search">Search</string>
+    <string name="add_recipient">Add Recipient</string>
+</resources>

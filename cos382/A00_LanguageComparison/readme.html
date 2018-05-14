@@ -1,0 +1,256 @@
+<meta charset="utf-8" lang="en">
+
+                **A00 - Comparing Languages**
+
+Student Info
+=============
+
+Your name: John Luscombe
+
+Partner's name (if applicable): Tim Parr
+
+Which language(s) did you use: Haskell, Prolog, Ruby, Scheme
+
+Which language(s) did your partner use: Ada, C#
+
+
+Implementations
+================
+
+Haskell
+--------------------------------
+
+![**Figure 1**: My Haskell prime partition implementation](haskell/screenshot.png width="600px")
+
+- Details
+
+  - **Calling conventions**: To call functions in Haskell, the developer must
+  seperate arguments with spaces, grouping arguments in parenthesis. This
+  differs from languages like Python and C#, where all arguments are in
+  one pair of parenthesis, separated by commas.
+
+  - **Input and output data formats**: Input and output data formats are what
+  you would expect from any other familiar language.
+
+- Negative aspects
+
+  - I could not figure out how to do an output message, followed by an input,
+  on the same line. So, the input for "Choose number to partition" is on the
+  next line, which makes it look like it is a prime partition itself.
+
+- Positive aspects
+
+  - The output format of the prime partitions is easy to read (e.g. 2 + 5 + 13).
+
+- Describe your choice of...
+
+  - **Modularization (abstractions)**: I abstracted portions of the code into
+  various functions, much like Python and Ruby. The differences, however, are
+  where I converted Python functions with for loops into recursive functions
+  in Haskell. Some of these recursive functions I split into two functions:
+  a "starter" function and a recursive "helper" function.
+
+  - **Data structures**: The only data structure I used in Haskell was a list,
+  which is the same as a string.
+
+  - **Algorithms**: As I said in the _modularization_ section, the major
+  difference in algorithms between my Ruby implementation and my Haskell
+  implementation was my use of recursive functions over functions with for loops.
+
+- Design decision justifications
+
+  - The reason why some of the recursive functions have helper functions is so
+  that calling the recursive functions is much easier, via the "starter"
+  functions. That way, you only call them with the arguments you need, rather
+  than a bunch of arguments that are only useful for recursive purposes.
+
+
+Ruby
+--------------------------------
+
+![**Figure 2**: My Ruby prime partition implementation](ruby/screenshot.png width="600px")
+
+- Details
+
+  - **Calling conventions**: One example of the difference between calling
+  conventions in Ruby and Python is that Ruby does not require parenthesis
+  around the arguments.
+
+  - **Input and output data formats**: Input in Ruby differs from that of Python
+  because with Ruby, the input text and the actual input functionality is split
+  up into two methods (`puts` and `gets`) rather than just combining them like
+  in Python's `input()`. Output in Ruby also differs because printing with a
+  newline character (`puts`) is a separate method from printing without a
+  newline character (`print`).
+
+- Negative aspects
+
+  - I cannot think of any real limitations or bugs.
+
+- Positive aspects
+
+  - The output format of the prime partitions is easy to read (e.g. 2 + 5 + 13).
+
+- Describe your choice of...
+
+  - **Modularization (abstractions)**: I used a variety of different functions
+  to maintain readability.
+
+  - **Data structures**: The only data structures used were lists, which were
+  helpful in determining the prime partitions.
+
+  - **Algorithms**: Using for loops rather than recursion wherever possible
+  enhances readability for most developers.
+
+- Differences from other students
+
+  - I chose not to use the `continue` statement (or Ruby's equivalent),
+  because in my opinion its unnecessary. For example, Figure 2 is a lot easier
+  to read than Figure 1, in my opinion (see below).
+
+Figure 3 - For loop with `continue` statement
+
+~~~
+for i in range(10):
+    if i % 2 == 0:
+        continue
+    else:
+        print(i)
+~~~
+
+Figure 4 - For loop without `continue` statement
+
+~~~
+for i in range(10):
+    if i % 2 != 0:
+        print(i)
+~~~
+
+
+Prolog
+--------------------------------
+
+![**Figure 5**: My Prolog prime partition implementation](prolog/screenshot.png width="600px")
+
+- Details
+
+  - **Calling conventions**: The best way I can describe Prolog's calling
+  conventions is that variables that are about to having something assigned to
+  it are used as _another argument_ in the function (or predicate, as it is
+  known in Prolog). While this is most likely not how Prolog predicates are
+  meant to be used, this is the best way I can describe it. See Figure 6 and
+  Figure 7 below.
+
+  - **Input and output data formats**: The only difference I could tell with
+  Prolog's input data format is that numbers in input are automatically
+  interpreted as numbers, not strings. I could not see any major difference
+  with output data formats.
+
+- Negative aspects
+
+  - A query is still necessary upon entering the swipl interpreter.
+
+  - When entering a number on the "Choose a number to partition" prompt, the
+  user must enter a period (.) after the number, which is easy to forget to do.
+
+  - Even though the prime partitions print, an empty list for the primePartition
+  predicate variable prints along with them.
+
+- Positive aspects
+
+  - The output format of the prime partitions is easy to read (e.g. 2 + 5 + 13).
+
+- Describe your choice of...
+
+  - **Modularization (abstractions)**: I used predicates much like functions
+  in Python or Ruby, because I could not think of a more "prolog" way to do it.
+
+  - **Data structures**: The only data structure I used was lists, which was
+  all I needed.
+
+  - **Algorithms**: The major difference in algorithms between my Ruby
+  implementation and my Prolog implementation was my use of recursive predicates
+  over functions with for loops.
+
+- Design decision justifications
+
+  - As I said in the _modularization_ section, I used predicates much like
+  functions in Python or Ruby, because I could not think of a more "prolog" way
+  to do it.
+
+Figure 6 - Python assignment
+
+~~~
+assignmentVariable = function(parameter1, parameter2)
+~~~
+
+Figure 7 - Prolog "assignment"
+
+~~~
+predicate(Parameter1, Parameter2, AssignmentVariable).
+~~~
+
+
+Scheme
+--------------------------------
+
+![**Figure 8**: My Scheme prime partition implementation](scheme/screenshot.png width="600px")
+
+- Details
+
+  - **Calling conventions**: In languages that I am used to, functions are
+  called with the function name, followed by the parameters in parenthesis
+  (e.g. `def function(parameter1, parameter2)`). Scheme defines functions with
+  everything in the parenthesis, including the function name
+  (e.g. `(function parameter1 parameter2)`).
+
+  - **Input and output data formats**: Similar to Prolog, the only difference I
+  could tell with Scheme's input data format is that numbers in input are
+  automatically interpreted as numbers, not strings. I could not see any major
+  difference with output data formats.
+
+- Negative aspects
+
+  - I cannot think of any real limitations or bugs.
+
+- Positive aspects
+
+  - The output format of the prime partitions is easy to read (e.g. 2 + 5 + 13).
+
+- Describe your choice of...
+
+  - **Modularization (abstractions)**: Like Haskell and Prolog, I used
+  recursive functions where in Ruby I used for loops. In addition, I used
+  recursive helper functions to keep function calls simple.
+
+  - **Data structures**: The only data structure I used was lists, which was
+  all I needed.
+
+  - **Algorithms**: The difference in algorithms between my
+  Ruby implementation and my Scheme implementation was the use of recursive
+  functions over functions with for loops, much like Haskell.
+
+
+Assignment Reflection
+======================
+
+Hours to complete assignment: ~18 hours on my end
+
+Other comments: I think the idea of the assignment is very valuable, exposing
+us to other languages by applying what what we know in familiar languages and
+paradigms (e.g. Python), and translating them to a variety of different types of
+languages. The major complaint I have with this assignment, however, is that the
+algorithm is way too hard, especially for what is supposed to be assignment 0.
+I couldn't figure it out in _Python_ without help, let alone be able to do it in
+unfamiliar languages. My suggestion for next time is to pick a simpler algorithm,
+maybe just getting the pairs of prime numbers instead of all combinations of
+different sizes.
+
+Also, one other thing I may mention, is that you mentioned in class that this
+assignment "should not take us that long". However, that was not the case with
+Tim and I, and mostly everybody else in the class. My suggestion is that you
+refrain from saying that in the future, since this can be very discouraging if
+we are struggling with an assignment. That being said, thank you for all the
+help you have given us, me in particular.
+
+<style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="https://casual-effects.com/markdeep/latest/markdeep.min.js"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible");</script>

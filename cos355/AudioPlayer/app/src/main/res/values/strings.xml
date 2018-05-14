@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AudioPlayer</string>
+    <string name="play_random_sound">Play Random Sound From Downloads</string>
+    <string name="no_downloaded_sounds">No Downloaded Sounds</string>
+    <string name="play_sound_from_resource_file">Play Sound From Resource File</string>
+    <string name="pause">Pause</string>
+</resources>

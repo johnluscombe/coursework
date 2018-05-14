@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/RelativeLayoutStyle">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/new_gift_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ToolbarTheme"
+        style="@style/ToolbarStyle" />
+
+    <RelativeLayout
+        tools:context="johnluscombe.giftlet.NewGift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_gift_toolbar"
+        style="@style/StandardPadding">
+
+        <EditText
+            android:id="@+id/gift_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            style="@style/EditTextStyle_TextPersonName" />
+
+        <EditText
+            android:id="@+id/gift_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gift_name"
+            android:hint="@string/url"
+            style="@style/EditTextStyle_TextPersonName" />
+
+        <EditText
+            android:id="@+id/gift_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gift_url"
+            android:hint="@string/price"
+            style="@style/EditTextStyle_NumberDecimal" />
+
+        <EditText
+            android:id="@+id/gift_description"
+            style="@style/EditTextStyle_TextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gift_price"
+            android:hint="@string/description"
+            android:inputType="textMultiLine"
+            android:lines="10" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gift_description"
+            android:text="@string/save"
+            style="@style/AddNewGiftButtonStyle" />
+
+    </RelativeLayout>
+</RelativeLayout>

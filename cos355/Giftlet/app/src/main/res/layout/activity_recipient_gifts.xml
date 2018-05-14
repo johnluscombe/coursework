@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/RelativeLayoutStyle">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/recipient_gifts_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ToolbarTheme"
+        style="@style/ToolbarStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recipient_gifts_toolbar"
+        android:orientation="vertical"
+        android:id="@+id/recipient_gift_list_container"
+        style="@style/StandardPadding">
+
+        <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/recipient_gift_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ListViewStyle_Base"
+            style="@style/ListViewStyle_Base" />
+
+        <TextView
+            android:id="@+id/no_data_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/no_data" />
+
+        <Button
+            android:id="@+id/addNewGift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_new_gift"
+            style="@style/AddNewGiftButtonStyle" />
+
+    </LinearLayout>
+
+</RelativeLayout>
