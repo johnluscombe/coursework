@@ -9,7 +9,7 @@ overflow attacks, and to demonstrate them to the professor.
 
 ### Return-Oriented Programming Attack
 
-*Vulnerability Location*: `shared/source/role.c`
+**Vulnerability Location**: `shared/source/role.c`
 
 For my first attack, I exploited a return-oriented programming vulnerability.
 The code is vulnerable because a student can carefully craft specific input for
@@ -38,7 +38,7 @@ performance in my classes.
 
 ### Integer Overflow Attack
 
-*Vulnerability Location*: `teacher/source/teacher.c`
+**Vulnerability Location**: `teacher/source/teacher.c`
 
 For my second attack, I exploited an integer overflow vulnerability. The code
 is vulnerable because the user can carefully craft a specific menu option input
