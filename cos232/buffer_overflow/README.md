@@ -19,7 +19,7 @@ The exploit works like this: the stack location of the return address is
 located 56 bytes higher in memory than the username variable. Because of this,
 the user can simply provide 56 bytes of junk characters in username input,
 overflowing its 32-byte capacity. To see an example of such a username, see
-`malicious\_username.txt`.
+`malicious_username.txt`.
 
 After 56 bytes, the user can specify the address of the first instruction in
 `runTeacherProgram`, replacing the actual return address with a custom return
