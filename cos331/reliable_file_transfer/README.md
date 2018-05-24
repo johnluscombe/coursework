@@ -1,11 +1,10 @@
 # Reliable File Transfer Over UDP
 
-## Description
+## Assignment Purpose
 
-This project is a demonstration of the Transport Layer’s UDP protocol. Using
-C, both a client and server can send and receive packets over a uniquely built
-UDP protocol that provides reliable transfer and correct packet ordering. The
-client can request a file from the server and stores it in a local file.
+The purpose of this assignment was to add reliability services to UDP. That
+way, all packets can be transferred from host-to-host in order and without
+corruption.
 
 ## Build
 
