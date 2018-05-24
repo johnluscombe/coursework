@@ -19,7 +19,8 @@ format, it would produce an HTML quiz.
 5. Depending on the IDE, they might need to examine/edit the source of the
    quiz.html file and correct the filepath in the following line:
    `<script src="src/answers.js"></script>`.
-6. Navigate to where the quiz.html is located and open it in your browser. The        quiz should appear, as seen in the screenshot:
+6. Navigate to where the quiz.html is located and open it in your browser. The
+   quiz should appear, as seen in the screenshot:
    [Before Grading](img/webpage.png).
 7. Take the quiz and click submit to see your grade like in the screenshot:
    [After Grading](img/showing_grade.png).
@@ -64,7 +65,6 @@ What is the best major at Taylor?
     <meta charset="utf-8">
     <title>Example Quiz</title>
 </head>
-
 
 <body>
     <h1>Example Quiz</h1>
