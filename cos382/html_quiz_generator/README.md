@@ -155,3 +155,8 @@ function submitQuiz() {
     document.getElementById("submit").style.visibility = "hidden"
 }
 ```
+
+## Credit
+
+- **Assignment Author**: Dr. Jonathan Denning, PhD
+- **Assignment Partners**: Sean Mitchem, Tim Parr

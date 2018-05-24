@@ -33,3 +33,7 @@ Example:
 ```shell
 % ./http-server /tmp/www/htdocs 8080
 ```
+
+## Credit
+
+- **Assignment Author**: Dr. Dannie Stanley, PhD

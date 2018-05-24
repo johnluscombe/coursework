@@ -23,3 +23,7 @@ is getting changed, it will result in an indistinguishable difference from the
 original image.
 
 My source code can be seen in `encoder.c`.
+
+## Credit
+
+- **Assignment Author**: Dr. Dannie Stanley, PhD

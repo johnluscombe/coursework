@@ -63,3 +63,7 @@ could gain access to functionality that he should not be able to access. This
 allows him to surpass the program's access control, essentially giving him
 administrator access. From there, he could do all sorts of damage to the
 gradebook data.
+
+## Credit
+
+- **Assignment Author**: Dr. Dannie Stanley, PhD

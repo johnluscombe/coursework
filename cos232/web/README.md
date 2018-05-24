@@ -192,3 +192,7 @@ different protocol. This eliminates the problem of SQL statement templates
 being derived from external output, which allowed for SQL injection in the
 first place. With this problem eliminated, the SQL injection vulnerability
 is no longer a problem.
+
+## Credit
+
+- **Assignment Author**: Dr. Dannie Stanley, PhD

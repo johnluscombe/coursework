@@ -55,3 +55,7 @@ security. Second, the "from" address and the "to" address is not encrypted, so
 an attacker can see who's talking and who he or she is talking to. However,
 despite these disadvantages, this is still a solid approach for encrypting
 email.
+
+## Credit
+
+- **Assignment Author**: Dr. Dannie Stanley, PhD

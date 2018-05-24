@@ -71,3 +71,8 @@ Figure 2: Packet loss from client to server
 ![Packet loss from server to client](packet_loss_server_to_client.png)
 
 Figure 3: Packet loss from server to client
+
+## Credit
+
+- **Assignment Author**: Dr. Dannie Stanley, PhD
+- **Assignment Partner**: Grace Rose
