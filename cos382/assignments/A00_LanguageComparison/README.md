@@ -13,7 +13,15 @@ The number 12, for example, can be written as either 5+7 or 2+3+7. The numbers
 4 and 6, on the other hand, have no partition into unique primes, and the
 number 9 has only one: 2+7.
 
+## Example Output given n = 20
+
+```
+2 + 5 + 13
+2 + 7 + 11
+3 + 17
+7 + 13
+```
+
 ## Credit
 
 - **Assignment Author**: Dr. Jonathan Denning, PhD
-- **Assignment Partner**: Tim Parr
