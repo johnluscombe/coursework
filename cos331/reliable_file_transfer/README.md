@@ -62,15 +62,15 @@ the data will be stored into).
 
 ![No Packet Loss](no_packet_loss.png)
 
-Figure 1: Optimal data transmission, no packet loss
+**Figure 1**: Optimal data transmission, no packet loss
 
 ![Packet loss from client to server](packet_loss_client_to_server.png)
 
-Figure 2: Packet loss from client to server
+**Figure 2**: Packet loss from client to server
 
 ![Packet loss from server to client](packet_loss_server_to_client.png)
 
-Figure 3: Packet loss from server to client
+**Figure 3**: Packet loss from server to client
 
 ## Credit
 
