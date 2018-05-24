@@ -5,9 +5,13 @@
 The purpose of this assignment was to implement various approaches of
 translating from one language to another. The approaches were as follows:
 
-- **Recursive Descent Program**.
-- **ANTLR with Actions**.
-- **ANTLR with Listener/Visitor**.
+- **Recursive Descent Program**. See `src/RecursiveDescent.java` for my
+  implementation.
+- **ANTLR with Actions**. See `src/LanguageTranslationActions.g4` for my ANTLR
+  grammar, and the files in the `actions` directory for the Java code.
+- **ANTLR with Listener/Visitor**. See `src/LanguageTranslationListener.g4` for
+  my ANTLR grammar, and the files in the `listener` directory for the Java
+  code.
 
 For this assignment, we were to recognize infix arithmetic expressions and
 translate the input to postfix or Reverse Polish Notation (RPN).
