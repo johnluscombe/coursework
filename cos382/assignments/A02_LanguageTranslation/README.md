@@ -15,7 +15,7 @@ translating from one language to another. The approaches were as follows:
 
 For this assignment, we were to recognize infix arithmetic expressions and
 translate the input to postfix or Reverse Polish Notation (RPN).
-
+o
 Example Input:
 ```
 2 + 43 * AB; 4 + f;
